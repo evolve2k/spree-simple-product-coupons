@@ -1,4 +1,4 @@
-class ProductCouponsHooks < Spree::ThemeSupport::HookListener
+class SimpleProductCouponsHooks < Spree::ThemeSupport::HookListener
 
   #
   # In this file you can modify the content of the hooks available in the default templates

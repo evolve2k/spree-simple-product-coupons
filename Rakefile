@@ -99,17 +99,17 @@ namespace :spec do
   end
 end
 
-desc 'Generate documentation for the product_coupons extension.'
+desc 'Generate documentation for the simple_product_coupons extension.'
 Rake::RDocTask.new(:rdoc) do |rdoc|
   rdoc.rdoc_dir = 'rdoc'
-  rdoc.title    = 'ProductCouponsExtension'
+  rdoc.title    = 'SinmpleProductCouponsExtension'
   rdoc.options << '--line-numbers' << '--inline-source'
   rdoc.rdoc_files.include('README')
   rdoc.rdoc_files.include('lib/**/*.rb')
 end
 
 # For extensions that are in transition
-desc 'Test the product_coupons extension.'
+desc 'Test the simple_product_coupons extension.'
 Rake::TestTask.new(:test) do |t|
   t.libs << 'lib'
   t.pattern = 'test/**/*_test.rb'
@@ -117,14 +117,14 @@ Rake::TestTask.new(:test) do |t|
 end
 
 namespace :test do
-  desc 'Functional test the product_coupons extension.'
+  desc 'Functional test the simple_product_coupons extension.'
   Rake::TestTask.new(:functionals) do |t|
     t.libs << 'lib'
     t.pattern = 'test/functional/*_test.rb'
     t.verbose = true
   end
 
-  desc 'Unit test the product_coupons extension.'
+  desc 'Unit test the simple_product_coupons extension.'
   Rake::TestTask.new(:units) do |t|
     t.libs << 'lib'
     t.pattern = 'test/unit/*_test.rb'

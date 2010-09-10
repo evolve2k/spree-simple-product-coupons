@@ -1,10 +1,10 @@
 # Uncomment this if you reference any of your controllers in activate
 # require_dependency 'application'
 
-class ProductCouponsExtension < Spree::Extension
+class SimpleProductCouponsExtension < Spree::Extension
   version "1.0"
-  description "Describe your extension here"
-  url "http://yourwebsite.com/product_coupons"
+  description "Create simple coupons for the product variants you specify. (Includes Fixed Dollar and Percentage discounts)"
+  url "http://github.com/evolve2k/spree-simple-product-coupons"
 
   # Please use product_coupons/config/routes.rb instead for extension routes.
 
