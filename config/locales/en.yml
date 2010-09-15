@@ -1,5 +1,4 @@
----
-en-US: 
+en:
   discount_amount: "Discount per item ($)"
   flat_rate_specified_skus: "Specifed SKUs - Flat Rate"
   flat_percentage_specified_skus: "Specified SKUs - Flat Percentage"
